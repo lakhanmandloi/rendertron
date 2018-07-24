@@ -185,12 +185,12 @@ class Renderer {
 
       // Set a hard limit of 10 seconds.
       let maxTimeout = setTimeout(() => {
-        console.log(`10 second time budget limit reached.
+        console.log(`20 second time budget limit reached.
           Attempted rendering: ${url}
           Page load event fired: ${pageLoadEventFired}
           Outstanding network requests: ${outstandingRequests.size}`);
         pageReady();
-      }, 10000);
+      }, 20000);
     });
   }
 
